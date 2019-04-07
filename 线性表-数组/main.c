@@ -2,15 +2,20 @@
 #include <stdlib.h>
 #define MAXSIZE 100
 /*
+基于数组的线性表
+知识点:
 1. malloc的全称是memory allocation，中文叫动态内存分配，用于申请一块连续的指定大小的内存块区域以void*类型返回分配的内存区域地址，当无法知道内存具体位置的时候，想要绑定真正的内存空间，就需要用到动态的分配内存。
-
 */
-
 typedef struct LNode
 {
 	int Data[MAXSIZE];
 	int Last;
 }LNode;
+
+int Length(LNode *PtrL)
+{
+	return PtrL->Last + 1;
+}
 
 LNode *MakeEmpty()
 {
