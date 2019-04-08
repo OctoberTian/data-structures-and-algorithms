@@ -29,3 +29,24 @@ typedef struct LNode
 }LNode;
 ```
 
+# 堆栈
+
+## 堆栈-数组储存
+
+## 堆栈-链表储存
+
+```c
+typedef struct SNode
+{
+	int Data[MAXSIZE];
+	int Top;
+}SNode;
+
+//链表储存的堆栈
+typedef struct SNode_List
+{
+	int Data;
+	struct SNode_List *Next;
+}SLNode;
+```
+
