@@ -50,3 +50,23 @@ typedef struct SNode_List
 }SLNode;
 ```
 
+# 队列
+
+## 队列-单向链表实现
+
+两个节点类型，第一个是储存作用，第二个是队列的两个指针
+
+```c
+typedef struct Node
+{
+	int Data;
+	struct Node *Next;
+}Node;
+
+typedef struct QNode
+{
+	struct Node *Front;
+	struct Node *Rear;
+}QNode;
+```
+
